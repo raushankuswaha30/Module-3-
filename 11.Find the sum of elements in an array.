@@ -1,0 +1,8 @@
+fun main(){
+    val arr =arrayOf(21,32,32,23,23)
+    var sum=0
+    for (i in arr){
+        sum+=i
+}
+println("Sum of array element=$sum")
+}
