@@ -1,0 +1,14 @@
+fun main() {
+    print("Enter a string: ")
+    val str = readLine()!!.lowercase()
+
+    var count = 0
+
+    for (ch in str) {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            count++
+        }
+    }
+
+    println("Number of vowels = $count")
+}
