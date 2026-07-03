@@ -1,0 +1,13 @@
+fun main(){
+    print("Enter marks: ")
+    val marks=readLine()!!.toInt()
+        val grade=when{
+            marks in 90..100->"A"
+            marks in 80..89->"B"
+            marks in 70..79->"C"
+            marks in 60..69->"D"
+            marks in 50..59->"E"
+            else->"F"
+        }
+        println("Grade = $grade")
+    }
