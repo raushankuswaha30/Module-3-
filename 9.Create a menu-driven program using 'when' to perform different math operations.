@@ -1,0 +1,23 @@
+fun main() {
+    print("Enter first number: ")
+    val a = readLine()!!.toInt()
+
+    print("Enter second number: ")
+    val b = readLine()!!.toInt()
+
+    println("1. Add")
+    println("2. Subtract")
+    println("3. Multiply")
+    println("4. Divide")
+
+    print("Enter your choice: ")
+    val choice = readLine()!!.toInt()
+
+    when (choice) {
+        1 -> println("Result = ${a + b}")
+        2 -> println("Result = ${a - b}")
+        3 -> println("Result = ${a * b}")
+        4 -> println("Result = ${a.toDouble() / b}")
+        else -> println("Invalid Choice")
+    }
+}
