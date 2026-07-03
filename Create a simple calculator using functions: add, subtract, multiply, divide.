@@ -1,0 +1,16 @@
+fun add(a: Int, b: Int) = a + b
+fun subtract(a: Int, b: Int) = a - b
+fun multiply(a: Int, b: Int) = a * b
+fun divide(a: Int, b: Int): Double {
+    return a.toDouble() / b
+}
+
+fun main() {
+    val a = 20
+    val b = 10
+
+    println("Addition = ${add(a, b)}")
+    println("Subtraction = ${subtract(a, b)}")
+    println("Multiplication = ${multiply(a, b)}")
+    println("Division = ${divide(a, b)}")
+}
