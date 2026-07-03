@@ -1,0 +1,13 @@
+fun main() {
+    val list = listOf(15, 25, 10, 45, 30)
+
+    var max = list[0]
+
+    for (i in list) {
+        if (i > max)
+            max = i
+    }
+
+    println("Maximum number in list = $max")
+}
+
