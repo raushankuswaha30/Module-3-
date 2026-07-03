@@ -1,0 +1,16 @@
+fun factorial(n: Int): Long {
+    var fact = 1L
+
+    for (i in 1..n) {
+        fact *= i
+    }
+
+    return fact
+}
+
+fun main() {
+    print("Enter a number: ")
+    val num = readLine()!!.toInt()
+
+    println("Factorial = ${factorial(num)}")
+}
