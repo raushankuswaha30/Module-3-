@@ -1,0 +1,17 @@
+fun main() {
+    val list = listOf(10, 50, 30, 70, 40)
+
+    var largest = Int.MIN_VALUE
+    var secondLargest = Int.MIN_VALUE
+
+    for (num in list) {
+        if (num > largest) {
+            secondLargest = largest
+            largest = num
+        } else if (num > secondLargest && num != largest) {
+            secondLargest = num
+        }
+    }
+
+    println("Second Largest = $secondLargest")
+}
