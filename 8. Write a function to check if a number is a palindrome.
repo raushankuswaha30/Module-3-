@@ -1,0 +1,17 @@
+fun Palidrom(num:Int): Boolean{
+    var n=num
+    var rev=0
+    while (n>0){
+        rev=rev*10+n%10
+        n=n/10
+    }
+    return num==rev
+}
+fun main(){
+    print("Enter a number: ")
+    val number=readLine()!!.toInt()
+    if (Palidrom(number))
+        println("$number is a palindrome")
+    else
+        println("$number is not a palindrome")
+}
