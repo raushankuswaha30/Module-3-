@@ -1,0 +1,5 @@
+fun main(){
+    val list=listOf(12,42,12,32,43,12)
+    val uniqueList=list.toSet()
+    println("Unique elements = $uniqueList")
+}
